@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.demo.weather.ui.fragment.MainFragment"
+        tools:layout="@layout/fragment_mian">
+
+        <action
+            android:id="@+id/to_detail"
+            app:destination="@id/detail_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.demo.weather.ui.fragment.DetailFragment"
+        android:label="@string/details_title"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="plantId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
