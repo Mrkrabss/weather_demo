@@ -1,6 +1,6 @@
-package com.demo.weather;
+package com.demo.weather.network;
 
-import com.demo.weather.ui.fragment.WeatherBean;
+import com.demo.weather.network.bean.WeatherBean;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

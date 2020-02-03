@@ -13,6 +13,8 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.DividerItemDecoration;
 
 import com.demo.weather.databinding.FragmentDetailBinding;
+import com.demo.weather.network.bean.WeatherBean;
+import com.demo.weather.ui.model.WeatherDataViewModel;
 
 
 public class DetailFragment extends Fragment {

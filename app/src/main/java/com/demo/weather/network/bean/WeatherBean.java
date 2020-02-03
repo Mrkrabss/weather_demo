@@ -1,4 +1,4 @@
-package com.demo.weather.ui.fragment;
+package com.demo.weather.network.bean;
 
 public class WeatherBean {
     public CurrentlyBean getCurrently() {

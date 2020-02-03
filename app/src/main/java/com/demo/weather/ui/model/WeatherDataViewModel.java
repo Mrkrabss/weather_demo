@@ -1,4 +1,4 @@
-package com.demo.weather.ui.fragment;
+package com.demo.weather.ui.model;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
@@ -12,7 +12,8 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.demo.weather.DarkSkyService;
+import com.demo.weather.network.DarkSkyService;
+import com.demo.weather.network.bean.WeatherBean;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationRequest;
 
@@ -36,11 +37,11 @@ public class WeatherDataViewModel extends AndroidViewModel {
         super(application);
     }
 
-    LiveData<WeatherBean> getWeather() {
+    public LiveData<WeatherBean> getWeather() {
         return weather;
     }
 
-    LiveData<Status> getStatus() {
+    public LiveData<Status> getStatus() {
         return status;
     }
 

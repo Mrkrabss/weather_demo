@@ -9,7 +9,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.demo.weather.ui.fragment.WeatherDataViewModel;
+import com.demo.weather.ui.model.WeatherDataViewModel;
 
 
 public class MainActivity extends AppCompatActivity {

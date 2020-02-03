@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.demo.weather.R;
 import com.demo.weather.databinding.DetailItemBinding;
+import com.demo.weather.network.bean.HourlyDataBean;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

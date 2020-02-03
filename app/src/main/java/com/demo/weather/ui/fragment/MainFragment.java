@@ -15,6 +15,9 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.demo.weather.R;
 import com.demo.weather.databinding.FragmentMianBinding;
+import com.demo.weather.network.bean.WeatherBean;
+import com.demo.weather.ui.model.Status;
+import com.demo.weather.ui.model.WeatherDataViewModel;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
